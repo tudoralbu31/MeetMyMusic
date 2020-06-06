@@ -1,0 +1,87 @@
+
+.mainDiv{
+    width: 40%;
+    color: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #05386B;
+    box-shadow: 1px 1px ;
+
+    height: 100%;
+    background-color: #e5ecda;
+
+}
+
+.blabla{
+    font-size: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .buttonFollow {
+    font-size: 10px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #581845;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+  }
+  
+  .a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .button:hover, .a:hover {
+    opacity: 0.7;
+  }
+
+
+  .colorFont{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #05386B;
+    text-decoration: underline;
+  }
+
+  .followButton{
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .postari{
+    border-style: dotted;
+    border-color: white;
+    margin: 10px;
+  }
+
+
+  /*
+fundal d4c9b9
+prima bară m 581845
+a doua bară m 900c3f
+a treia bară m c70039
+bara m mijloc ff5733
+ffc300
+detalii negru 222023
+detalii gri 666666
+
+*/

@@ -1,0 +1,70 @@
+.secondDivs{
+    border: solid 1px;
+    padding: 3%;
+    background-color: #AAABB8;
+    border-radius: 10px;
+    border-style: groove;
+    margin: 15px;
+}
+
+.resultDivs{
+    background-color:#edf5e1;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+    border-radius: 10px;
+ 
+    padding: 10px;
+    border: ridge 1px; 
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 2px;
+    outline: 0;
+    font-size: 20px;
+    background-color: #f5f5f5;
+}
+
+.search:hover, .search:focus {
+    border: 1.5px solid #009688;
+    background-color: white;
+  }
+
+  .mainLabels{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+  }
+
+  .searchButtons{
+    border: solid #05386B  2px;
+  }
+
+  .searchButtons:hover{
+    border: solid rgb(120, 152, 184) 2px;
+    box-shadow: 1px 1px #5CDB95;
+  }
+
+  .labelType{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+
+  /*
+fundal d4c9b9
+prima bară m 581845
+a doua bară m 900c3f
+a treia bară m c70039
+bara m mijloc ff5733
+ffc300
+detalii negru 222023
+detalii gri 666666
+
+*/

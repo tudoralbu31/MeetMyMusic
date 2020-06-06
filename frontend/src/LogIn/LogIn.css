@@ -1,0 +1,74 @@
+
+
+
+.mainDiv{
+    margin: 5% 25% 5% 25%;
+    background-color:#8EE4AF ;
+    border-radius: 30px;
+    border-style: ridge;
+
+}
+
+
+
+.image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+.center{
+   width: 50%;
+   margin: 0 25% 0 25%;
+}
+
+.input{
+    font-size: 20px;
+    color: #772242;
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+}
+
+.button:hover{
+    background-color:#ff8b33;
+    color:#091b4d;
+    border-color:#e6985c;
+}
+
+
+.a{
+    font-weight: bold;
+    color:#581845;
+    font-size: 20px;
+    display: block;
+    margin: 20px;
+}
+
+.a:hover{
+    color: #455818;   
+    
+    
+}
+
+
+
+
+
+
+/*
+fundal d4c9b9
+prima bară m 581845
+a doua bară m 900c3f
+a treia bară m c70039
+bara m mijloc ff5733
+ffc300
+detalii negru 222023
+detalii gri 666666
+
+*/

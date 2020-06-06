@@ -1,0 +1,110 @@
+.input{
+    font-size: 20px;
+    color: #772242;
+}
+
+.form{
+    text-align: center;
+}
+
+.email{
+    margin-left: 45px;;
+}
+
+
+.mainDiv{
+    
+    background-color:#d4c9b9;
+
+    border-style: solid;
+    border-color:#b9cad4;
+    border-style: solid;
+   
+    width: 50%;
+    height: 80%;
+    margin: 10% 25% 10% 25%;
+}
+
+
+.secondDiv{
+    
+    width: 60%;
+    margin-left: 20%;
+    
+}
+
+.image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;    
+}
+
+.label{
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #900c3f;
+
+    width: 250px;
+    float: left;
+}
+
+.input{
+    font-size: 20px;
+    color: #772242;
+    display: inline-block;
+}
+
+.button{
+    color: #581845 ;
+    background-color: #d68472;
+    font-weight: bold;
+
+    border-color:#41211a;
+    width: 30%;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    margin:20px;
+    
+    display: inline-block;
+}
+
+.button:hover{
+    background-color:#ff8b33;
+    color:#091b4d;
+    border-color:#e6985c;
+}
+
+
+.a{
+    font-weight: bold;
+    color:#581845;
+    font-size: 20px;
+    display: block;
+    margin: 20px;
+}
+
+.a:hover{
+    color: #455818;   
+    
+    
+}
+
+
+
+/*
+fundal d4c9b9
+prima bară m 581845
+a doua bară m 900c3f
+a treia bară m c70039
+bara m mijloc ff5733
+ffc300
+detalii negru 222023
+detalii gri 666666
+
+*/

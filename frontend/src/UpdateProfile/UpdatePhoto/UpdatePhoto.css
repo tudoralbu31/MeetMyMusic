@@ -1,0 +1,16 @@
+.uploadButton {
+  height: 50px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  padding: 1px;
+  background-color:  rgb(12, 60, 202);
+}
+
+.uploadPhoto {
+  margin-top: 50px;
+}
+
+.uploadButton:hover {
+  background-color:royalblue;
+  color: black;
+}

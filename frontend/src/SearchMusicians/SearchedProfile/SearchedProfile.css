@@ -1,0 +1,28 @@
+.mainDiv{
+    display: inline-block;
+    margin: auto;
+    border: 1px solid;
+    font-size: 20px;
+    padding: 2px;
+    border-style: ridge;
+    border-radius: 5px;
+    border-color: black;
+    margin: 5px 0 5px 0;
+    background-color: lightblue;
+    height: 80px;
+}
+
+.image{
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list{
+    border-left: groove;
+    border-right: groove;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
