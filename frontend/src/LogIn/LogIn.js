@@ -57,10 +57,10 @@ const logInFields = ({ connectUser, setShowRegister }) => {
         <form className='form-horizontal'>
           <div className='form-group'>
             <label 
-            className={'control-label col-sm-2 '}
-             style={{color: "#900c3f"}} 
+            className={`${classes.labelColor} control-label col-sm-2 `}
+              
              for="email">
-               <b>Email:</b></label>
+               Email:</label>
                
             <div className='col-sm-12'>
               <input
@@ -75,9 +75,9 @@ const logInFields = ({ connectUser, setShowRegister }) => {
 
           <div className='form-group'>
             <label
-             className='control-label col-sm-2'
+             className={`control-label col-sm-2 ${classes.labelColor}`}
               for="pwd"
-              style={{color: "#900c3f"}} ><b>Password:</b></label>
+               >Password:</label>
             <div className='col-sm-12'>
               <input
                 className='form-control'
@@ -102,7 +102,7 @@ const logInFields = ({ connectUser, setShowRegister }) => {
         </button> */}
 
         <div className='text-center'>
-        <button className='btn btn-link' type='button' onClick={() => setShowRegister(true)}>
+        <button className={` m-3 btn btn-link ${classes.noAccount}`} type='button' onClick={() => setShowRegister(true)}>
           No accont? Register now!
         </button>
         </div>

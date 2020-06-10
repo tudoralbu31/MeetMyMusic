@@ -1,18 +1,28 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import image from '../images/no_profile_picture.png'
 import classes from './Profile.css'
 
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faUserAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Post from '../PostPage/Post/Post.jsx'
+import {TheContext} from '../Context';
 
 const profile = props => {
   const [data, setData] = useState({})
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState({
+    isError: false,
+    reason: ''
+  })
   const [upload, setUpload] = useState(null)
 
+  /* const data1 = useContext(TheContext);
+  console.log(data1);
+ */
   useEffect(() => {
     const getProfileInfo = async () => {
       try {
-      //  const { data } = await api.get(`/api/profile/getProfileInfo/${email}`)
+        //  const { data } = await api.get(`/api/profile/getProfileInfo/${email}`)
         const data = {
           success: true,
           profileData: {
@@ -21,75 +31,78 @@ const profile = props => {
             oras: 'Cugir',
             tara: 'Romania',
             tip: 'Trapper',
-            followeri: 50000
+            followeri: 300000
           }
         }
         if (data.success) {
           const { profileData } = data
           setData(profileData)
+          setTimeout(() => {
+            setLoading(false)
+          }, 3000)
         }
       } catch (err) {
         console.log('Error from Profile.js', err)
       }
     }
 
-    getProfileInfo();
-
+    getProfileInfo()
   }, [])
 
   const handleUpload = e => {
     setUpload(e.target.files[0])
   }
 
-  const postari = [
-    ['Chitara ', 'Bass ', 'Tobe '],
-    ['Chitara', 'Bass', 'Tobe'],
-    ['Chitara', 'Bass', 'Tobe'],
-    ['Chitara', 'Bass', 'Tobe'],
-    ['Chitara', 'Bass', 'Tobe']
-  ]
+
 
   return (
     <div className={`container text-center   ${classes.mainDiv} `}>
-      <div className='container '>
-        <img
-          className='m-2'
-          src={image}
-          alt='no profile picture'
-          style={
-            ({ width: '100%' }, { height: '350px' }, { borderRadius: '50%' })
-          }
-        ></img>
+      {loading ? <div>fa asta</div> : <div>nu se loaduie</div>}
+      <div className={`container ${classes.userCard}`}>
+        <div>
+          <img
+            className='m-2'
+            src={image}
+            alt='no profile picture'
+            style={
+              ({ width: '100%' }, { height: '350px' }, { borderRadius: '50%' })
+            }
+          ></img>
+        </div>
 
-        <FontAwesomeIcon icon={faHome} size='5x' />
-        <h1 className={`${classes.colorFont} m-5`}>
-          <b>{data.nume}</b>
-        </h1>
-        <h2 className={`${classes.colorFont} m-3`}>
-          Followers:<b>{data.followeri}</b>
-        </h2>
-        <h2 className={`${classes.colorFont} m-3`}>
-          {data.oras}, {data.tara}
-        </h2>
-        <h2 className={`${classes.colorFont} m-5`}>{data.tip}</h2>
+        <div className='d-inline d-flex flex-column col-lg-12 col-md-8 col-xs-4 '>
+          <div className=' '>
+            <h1 className={`${classes.colorFont} m-5`}></h1>
+          </div>
 
-        <p>
-          <button className={`${classes.followButton} btn btn-success `}>
-            Follow
-          </button>
-        </p>
+          <p className={`${classes.colorFont} m-3`}>
+            Followers:<b>{data.followeri}</b>
+          </p>
+
+          <h2 className={`${classes.colorFont} m-3`}>
+            {data.oras}, {data.tara}
+          </h2>
+          <h2 className={`${classes.colorFont} m-5`}>{data.tip}</h2>
+          <p>
+            <button className={`${classes.followButton} btn btn-success `}>
+              Follow
+            </button>
+          </p>
+        </div>
       </div>
 
-      <div className='container bg-dark mt-5'>
-        {postari.map(instrumente =>
-          instrumente.map(fiecare => (
+      <div className={`container mt-5 ${classes.postArea}`}>
+        
             <div className={`${classes.postari}`}>
-              <ul>
-                <li>{fiecare}</li>
-              </ul>
+             
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+
+              
             </div>
-          ))
-        )}
+       
       </div>
     </div>
   )

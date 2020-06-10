@@ -6,8 +6,6 @@
     background-color:#29648A;
     padding: 20px;
     margin-top: 20px;
-
-   
 }
 
 .color{
@@ -36,7 +34,7 @@
     border-radius: 10px;
     border-width: 2px;
     border-color: #05386B ;
-    height: 1000px;
+    height: auto;
 
     background-color: #AAABB8  ;
 

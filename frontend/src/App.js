@@ -5,6 +5,7 @@ import classes from '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import photo from './images/mmmLat.jpg'
 import background from './images/musicasite.jpg'
 import classes1 from './App.css'
+import SideDrawer from './Navigation/SideDrawer/SideDrawer'
 
 
 
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className={classes1.body}>
        <Auxi  />
+       
       </div>
     );
   }

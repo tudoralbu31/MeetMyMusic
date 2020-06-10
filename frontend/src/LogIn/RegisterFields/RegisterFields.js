@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classes from './RegisterFields.css'
 import { auth } from '../FirebaseAuth/FirebaseAuth'
-import image from '../../images/mmmLat.jpg'
+import image from '../../images/MMM.png'
 
 const createUserWithEmailAndPasswordHandler = async (
   event,
@@ -49,7 +49,7 @@ const registerFields = ({ setShowRegister }) => {
         <form className='form-horizontal'>
           <div  className='form-group'>
             <label className={'control-label col-sm-2 '}
-             style={{color: "#900c3f"}} >
+             >
               <b>Email:</b>
             </label>
             <div className='col-sm-12'>
@@ -65,7 +65,7 @@ const registerFields = ({ setShowRegister }) => {
 
           <div  className='form-group'>
             <label className={'control-label col-sm-2 '}
-             style={{color: "#900c3f"}} >
+             >
               <b>Password:</b>
             </label>
             <div className='col-sm-12'>
@@ -81,7 +81,7 @@ const registerFields = ({ setShowRegister }) => {
 
           <div  className='form-group'>
             <label className={'control-label col-sm-10 '}
-             style={{color: "#900c3f"}} >
+          >
               <b>Confirm Password:</b>
             </label>
             <div className='col-sm-12'>
@@ -96,7 +96,7 @@ const registerFields = ({ setShowRegister }) => {
 
           <div  className='form-group'>
             <label className={'control-label col-sm-2 '}
-             style={{color: "#900c3f"}} >
+              >
               <b>Nickname: </b>
             </label>
             <div className='col-sm-12'>
@@ -113,7 +113,7 @@ const registerFields = ({ setShowRegister }) => {
 
         <div className="text-center">
         <button
-          className='btn btn-primary btn-lg'
+          className='mt-3 mb-3 btn btn-primary btn-lg'
           type='button'
           onClick={registerNewUser}
         >
