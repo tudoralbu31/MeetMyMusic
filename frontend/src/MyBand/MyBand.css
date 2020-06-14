@@ -18,3 +18,11 @@
 .musician{
     width: 100%;
 }
+
+
+@media screen and (max-width: 800px){
+    .mainDiv{
+        width: 100%;
+        height: 100%;
+    }
+}

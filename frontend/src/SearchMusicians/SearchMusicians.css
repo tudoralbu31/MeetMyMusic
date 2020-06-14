@@ -1,3 +1,7 @@
+.mainDiv{
+  height: auto;
+}
+
 .secondDivs{
     border: solid 1px;
     padding: 3%;

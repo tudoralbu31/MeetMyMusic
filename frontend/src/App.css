@@ -1,6 +1,6 @@
 body{
     background-image: url('./images/muzica.jpg');
-    backdrop-filter: blur(5px);
+    
 }
 
 
@@ -13,4 +13,13 @@ body{
 .culori2{
     background-color: #2E9CCA;
     color: #29648A;
+}
+
+
+@media screen and (max-width: 800px){
+ body{
+  
+ }
+
+
 }

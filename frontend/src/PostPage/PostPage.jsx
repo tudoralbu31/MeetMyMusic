@@ -3,6 +3,8 @@ import classes from './PostPage.css'
 import { create } from 'apisauce'
 import Post from './Post/Post'
 
+
+
 const api = create({
   baseURL: 'http://localhost:5000'
 })
@@ -106,9 +108,6 @@ const Posts = props => {
       </div>
 
       <div className={`${classes.thirdDiv} container mt-4`}>
-        <Post />
-        <Post />
-
         <Post />
       </div>
     </div>

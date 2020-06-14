@@ -16,9 +16,28 @@ const profile = props => {
   })
   const [upload, setUpload] = useState(null)
 
-  /* const data1 = useContext(TheContext);
-  console.log(data1);
- */
+  //buttonul de contact
+  const [contact, setContact] = useState({show : false});
+  /* const toggleContact= () =>{
+    !contact.show
+    ?setContact({show: true})
+    :setContact({show: false})
+  } */
+
+  //const toggleContact = () => !contact.show && setContact({show: !contact.show})
+
+  //buttonul de follow
+  const [follow, setFollow] = useState({following: false});
+  const switchFollow = () =>{
+    !follow.following
+    ?setFollow({following: true})
+    :setFollow({following: false})
+  }
+
+
+  const {state: musicianData} = useContext(TheContext);
+  console.log('--------------------------------',musicianData);
+  
   useEffect(() => {
     const getProfileInfo = async () => {
       try {
@@ -72,22 +91,48 @@ const profile = props => {
 
         <div className='d-inline d-flex flex-column col-lg-12 col-md-8 col-xs-4 '>
           <div className=' '>
-            <h1 className={`${classes.colorFont} m-5`}></h1>
+          <h1 className={`${classes.colorFont} m-5`}>{musicianData.nickname}</h1>
           </div>
 
           <p className={`${classes.colorFont} m-3`}>
-            Followers:<b>{data.followeri}</b>
+            Followers:<b>{musicianData.followers}</b>
           </p>
 
           <h2 className={`${classes.colorFont} m-3`}>
-            {data.oras}, {data.tara}
+            {musicianData.city}, {musicianData.country}
           </h2>
-          <h2 className={`${classes.colorFont} m-5`}>{data.tip}</h2>
-          <p>
-            <button className={`${classes.followButton} btn btn-success `}>
-              Follow
+          <h2 className={`${classes.colorFont} m-5`}>{musicianData.type}</h2>
+         
+         {!follow.following
+         ?(<button onClick={switchFollow} className={`${classes.followButton} btn btn-success `}>
+         Follow
+       </button>)
+        :(<button  onClick={switchFollow} className={`${classes.followButton} btn btn-success `}>
+        Unfollow
+      </button>)
+     
+      }
+      { console.log(follow.following)}
+            
+          
+
+          <div>
+          <button onClick={() => setContact({show: !contact.show})} className={`${classes.contactButton} btn btn-info `}>
+              Contact
             </button>
-          </p>
+          </div>
+          
+          {contact.show
+          ?(<div className={`${classes.contactDiv} text-center`}>
+            <p>Email this musician at:</p>
+            <h2> email </h2>
+             
+
+          </div>)
+        :(<div></div>)
+        }
+
+
         </div>
       </div>
 
