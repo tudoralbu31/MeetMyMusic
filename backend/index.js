@@ -19,6 +19,9 @@ TRIMIT DATE:
 
 */
 
+// ASTA AM ADAUGAT NOU !!
+// NEW CHANGE
+
 app.use(express.json())
 
 app.use(function (req, res, next) {
