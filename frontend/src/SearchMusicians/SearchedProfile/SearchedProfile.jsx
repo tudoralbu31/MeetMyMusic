@@ -14,7 +14,7 @@ const SeachedProfile = () => {
     <div
       className={`${classes.mainDiv} `}
     >
-      <ul className={`d-flex flew-row justify-content-between `}>
+      <ul className={`col-lg-12 col-md-8 col-xs-4 d-flex flew-row justify-content-between `}>
         
           <div className='mt-1 mb-1'>
           <img

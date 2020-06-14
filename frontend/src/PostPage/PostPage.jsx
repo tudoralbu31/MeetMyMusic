@@ -107,9 +107,6 @@ const Posts = props => {
 
       <div className={`${classes.thirdDiv} container mt-4`}>
         <Post />
-        <Post />
-
-        <Post />
       </div>
     </div>
   )

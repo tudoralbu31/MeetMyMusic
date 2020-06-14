@@ -1,33 +1,58 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import classes from './SideDrawer.css'
 import { NavLink, Link } from 'react-router-dom'
+import { TheContext } from '../../Context'
 
+const SideDrawer = () => {
+  const { state, UNTOGGLE_SIDE_DRAWER } = useContext(TheContext)
 
-const SideDrawer = () =>{
-  return <div className={`${classes.sideDrawer} `}>
+  return (
+    <div className={`${classes.sideDrawer} `}>
       <ul className='navbar-nav  col-lg-12 col-md-8 col-xs-4 w-100 justify-content-center '>
-                <li className='nav-item active'>
-                  <Link to='/News' className={`${classes.list} mb-4`} >
-                    News
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link to='/Profile' className={`${classes.list} mb-4`} >
-                    Profile
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link to='/Search' className={`${classes.list} mb-4`} >
-                    Search Musicians
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                  <Link to='/Myband' className={`${classes.list} mb-4`}>
-                    My band
-                  </Link>
-                </li>
-              </ul>
-  </div>
+        <li className='nav-item active'>
+          <Link
+            to='/News'
+            onClick={() =>
+              {state.globalConfig.sideDrawer = false
+                {console.log('-BBBBB---------------', state.globalConfig.sideDrawer)}
+
+              }
+            }
+            className={`${classes.list} mb-4`}
+          >
+            News
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/Profile' className={`${classes.list} mb-4`}>
+            Profile
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/Search' className={`${classes.list} mb-4`}>
+            Search Musicians
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/Myband' className={`${classes.list} mb-4`}>
+            My band
+          </Link>
+        </li>
+        {console.log('-AAAAA---------------', state.globalConfig.sideDrawer)}
+      </ul>
+
+      <div>
+        <button
+          type='button'
+          onClick={() => (state.sideDrawer = false)}
+          className='btn btn-danger mt-5 ml-2'
+        >
+          {' '}
+          Back{' '}
+        </button>
+      </div>
+    </div>
+  )
 }
 
-export default SideDrawer;
+export default SideDrawer

@@ -85,6 +85,7 @@ li {
   border: none;
   box-sizing: border-box;
   justify-content: space-between;
+  display: none;
   
 
 }
@@ -104,4 +105,81 @@ li {
   justify-content: space-between;
 
   
+}
+
+.ul{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.primulDivSubNav{
+  
+}
+
+.alDoileaDivSubNav{}
+
+
+@media screen and (max-width: 1300px){
+  .ul{
+    display: none;
+    width: 10px;
+  }
+
+  .toggleButton{
+    display: flex;
+  }
+
+
+}
+
+
+@media screen and (max-width: 800px){
+   .navBar {
+     width: 100%;
+    background-color: #25274D;
+    height: 100px;
+    top:0;
+    left: 0;
+  }
+
+  .primulDivSubNav{
+    justify-content: center;
+  }
+
+  .alDoileaDivSubNav{
+    width: 20px;
+    float: left;
+  }
+
+  .logo {
+    margin-left: 60px;
+    width: 150px;
+    height: 50px;
+    
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 390px){
+ 
+  .disconect{
+    float: left;
+    padding: 0;
+   
+
+  }
+
+
+}
+
+@media screen and (max-width: 220px){
+  .navBar {
+   background-color: #25274D;
+   height: 200px;
+   top:0;
+   left: 0;
+
+ }
 }

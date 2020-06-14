@@ -86,3 +86,15 @@ detalii negru 222023
 detalii gri 666666
 
 */
+
+@media screen and (max-width: 800px){
+    .mainDiv{
+        width: 100%;
+        height: auto;
+        
+        padding-top: 250px;
+        
+        padding-bottom: 300px;
+
+    }
+}
