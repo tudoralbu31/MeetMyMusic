@@ -1,0 +1,33 @@
+.sideDrawer{
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    z-index: 200;
+}
+
+
+.list{
+    
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px ridge;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color:     #2E9CCA;
+    
+    text-decoration: none;
+   
+}
+
+
+.list:hover{
+    background-color:#2E9CCA;
+    color: white;
+ 
+}

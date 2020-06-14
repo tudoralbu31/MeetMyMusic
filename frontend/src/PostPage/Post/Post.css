@@ -1,0 +1,173 @@
+.photo{
+    height: 100%;
+    width: 100%;
+}
+
+.mainDiv{
+    
+    margin-top: 20px;
+}
+
+
+.secondDiv1{
+    border-top: none;
+    border-style: ridge;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(195, 218, 228);
+}
+
+.margin{
+    margin: 0;
+}
+
+.likeBar{
+/*     background-color: white
+ */
+border: ridge;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+width: auto;
+background-color: rgb(195, 218, 228);
+}
+
+.textArea{
+    border-style:dashed;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    background-color: #e5ecda ;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.buttons{
+    width: 100px;
+    background-color: #31bd44;
+
+}
+
+
+.buttons:hover{
+    background-color: #13f130;
+}
+
+.nameTag{
+    padding: 5px;
+    font-size: 25px;
+    border-style: ridge;
+    border-bottom: none;
+    border-radius: 10px;
+    width: 180px auto;
+    color: black;
+    background-color: rgb(195, 218, 228);
+
+}
+
+.postText{
+    font-size: 18px;
+    color: black;
+
+}
+
+.titlePhoto{
+    height: 40px;
+    width: 40px;
+}
+
+.photoDiv{
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+.buttons2{
+    width: 100px;
+    background-color: #13f130;
+
+}
+
+.iconsDiv{
+    color: black;
+    width: 110px;
+}
+
+.likeIconDiv{
+    width: 50px;
+
+    font-size: 30px;
+}
+
+.likeIconDiv:hover{
+    width: 50px;
+    
+    padding-top: 1px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.commIconDiv{
+    width: 50px;
+    
+    font-size: 30px;
+}
+
+.commIconDiv:hover{
+    width: 50px;
+    padding-top: 1px;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+
+
+
+.commentSection{
+    border: ridge 1px black;
+    border-radius: 10px;
+
+}
+
+.singleComment{
+    border-radius: 10px;
+    border-style: ridge;
+    width: 99%;
+    background-color: white;
+}
+
+
+.width50{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px){
+
+    .mainDiv{
+        width: 100%;
+   
+      }
+    
+}
+
+
+
+@media screen and (max-width: 400px){
+   
+    .mainDiv{
+      width: 100%;
+ 
+    }
+  
+    
+  
+    .buttonFollow {
+      width: 20%;
+    }
+
+    .photoDiv{
+        height: 150px;
+        width: 100%;
+    }
+  
+  
+  }

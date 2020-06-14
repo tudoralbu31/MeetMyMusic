@@ -11,12 +11,14 @@
     box-shadow: 1px 1px ;
 
     height: 100%;
-    background-color: #e5ecda;
+    background-color: white;
+    font-size: 10px !important;
+    background-image: url('../images/noteMuzicale.jpg');
 
 }
 
 .blabla{
-    font-size: 30px;
+   
 }
 
 .card {
@@ -28,11 +30,11 @@
   
   .title {
     color: grey;
-    font-size: 18px;
+    
   }
   
   .buttonFollow {
-    font-size: 10px;
+    
     border: none;
     outline: 0;
     display: inline-block;
@@ -42,7 +44,7 @@
     text-align: center;
     cursor: pointer;
     width: 30%;
-    font-size: 18px;
+    
   }
   
   .a {
@@ -58,17 +60,22 @@
 
   .colorFont{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #05386B;
+    color: white;
     text-decoration: underline;
+    font-size: 25px;
+    
   }
 
   .followButton{
     border-radius: 10px;
     padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: green;
+    border-width: 3px;
   }
 
   .postari{
-    border-style: dotted;
+    
     border-color: white;
     margin: 10px;
   }
@@ -85,3 +92,113 @@ detalii negru 222023
 detalii gri 666666
 
 */
+
+.incons{
+  height: 0;
+  position: relative;
+  
+}
+
+.lists{
+  display: flex;
+  flex-direction: row;
+}
+
+.postArea{
+  background-color: #29648A;
+  border-radius: 10px;
+  border-style: ridge;
+  color: black;
+}
+
+.userCard{
+  width: 60%;
+  border-style: ridge;
+  border-width: 2px;
+  border-radius: 20px;
+  background-color: #2E9CCA ;
+}
+
+.contactDiv{
+  height: auto;
+  width: 60%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.contactButton{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 30px 15px 30px;
+  border-color: #05386B;
+  border-width: 3px;
+  background-color: white;
+  color: #05386B;
+}
+
+
+@media screen and (max-width: 1100px){
+
+  .mainDiv{
+    width: 50%;
+  }
+
+  .userCard{
+    width: 70%;;
+  }
+
+
+}
+
+
+@media screen and (max-width: 800px){
+  .mainDiv{
+    width: 60%;
+  }
+
+  .userCard{
+    text-align: center;
+    width: auto;
+  }
+
+  .buttonFollow {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .mainDiv{
+    width: 85%;
+  }
+
+  .userCard{
+    width: 95%;;
+  }
+
+  .buttonFollow {
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .mainDiv{
+    width: 100%;
+    
+  }
+
+  .userCard{
+    width: 90%;;
+  }
+
+  .buttonFollow {
+    width: 20%;
+  }
+  
+
+
+}
