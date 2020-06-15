@@ -1,33 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from './MyBand.css'
 
-import SeachedProfile from '../SearchMusicians/SearchedProfile/SearchedProfile'
+import SearchedProfile from '../SearchMusicians/SearchedProfile/SearchedProfile'
 
 
 const MyBand = () =>{
+    const [musiciansData, setMusiciansData] = useState([])
+
     return (<div className={`${classes.mainDiv} container`}>
          
-            <SeachedProfile />
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
-
-            <SeachedProfile />
+         {musiciansData.length && musiciansData.map(musician => <SearchedProfile musician={musician} /> ) }
+            
 
 
             
