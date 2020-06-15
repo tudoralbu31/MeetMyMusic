@@ -61,6 +61,16 @@
   }
 
 
+  .searchButtonDiv{
+    background-color: seashell;
+    width: 20%;
+    height: 100px;
+    background-color: #AAABB8;
+    border-style: ridge;
+    border-radius: 10px;
+    
+  }
+
   /*
 fundal d4c9b9
 prima bară m 581845

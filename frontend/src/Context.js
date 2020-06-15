@@ -19,8 +19,7 @@ const TheReducer = (state, action) => {
 
       const newGlobalConfig = { ...oldGlobalConfig, sideDrawer: !sideDrawer }
       return { ...state, globalConfig: newGlobalConfig }
-      
-
+    
     case 'ADD_AUTH_INFO':
       const { payload } = action
       const { email } = payload
@@ -56,7 +55,6 @@ export const TheProvider = props => {
       value={{
         state,
         TOGGLE_SIDE_DRAWER: TOGGLE_SIDE_DRAWER(dispatch),
-        UNTOGGLE_SIDE_DRAWER: UNTOGGLE_SIDE_DRAWER(dispatch)
       }}
     >
       {props.children}

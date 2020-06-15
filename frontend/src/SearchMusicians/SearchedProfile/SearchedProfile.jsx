@@ -9,7 +9,9 @@ import classes from './SearchedProfile.css'
   type: 'rapper'
 }) */
 
-const SeachedProfile = () => {
+const SeachedProfile = ({musician}) => {
+  console.log('ce plm', musician)
+  const {nume, tara, localitate, ocupatie} = musician
   return (
     <div
       className={`${classes.mainDiv} `}
@@ -24,10 +26,10 @@ const SeachedProfile = () => {
           />
           </div>
         
-        <li> <p className={`m-3 ${classes.list}`}>Tudor</p> </li>
-        <li> <p className={`m-3 ${classes.list}`}>Romania</p> </li>
-        <li> <p className={`m-3 ${classes.list}`}>Timisoara</p> </li>
-        <li> <p className={`m-3 ${classes.list}`}>Rapper</p> </li>
+        <li> <p className={`m-3 ${classes.list}`}>{nume}</p> </li>
+        <li> <p className={`m-3 ${classes.list}`}>{tara}</p> </li>
+        <li> <p className={`m-3 ${classes.list}`}>{localitate}</p> </li>
+        <li> <p className={`m-3 ${classes.list}`}>{ocupatie}</p> </li>
       </ul>
      
       
